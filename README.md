@@ -48,60 +48,95 @@ cargo run --features demo6
 
 ## 🎯 Demo-uri disponibile
 
-### 🔦 Demo 1: Shadow Mapping
-Implementare de shadow mapping cu framebuffer offscreen și depth texture.
+**Demo 1:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║                      CONTROALE JOC                             ║
+╠════════════════════════════════════════════════════════════════╣
+║  [TAB]     - Intrare/Ieșire din modul player                   ║
+║  [ESC]     - Închidere program                                 ║
+║  [SPACE]   - Resetare obiecte în cădere                        ║
+║                                                                ║
+║  Modul Player:                                                 ║
+║    W/A/S/D - Mișcare (înainte/stânga/înapoi/dreapta)           ║
+║    Mouse   - Rotire cameră                                     ║
+╚════════════════════════════════════════════════════════════════╝
+```
 
-**Controale:**
-- `TAB` - Intrare/Ieșire din modul player
-- `W/A/S/D` - Mișcare cameră
-- `Mouse` - Rotire cameră
-- `ESC` - Închidere program
+**Demo 2:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║                      CONTROALE JOC                             ║
+╠════════════════════════════════════════════════════════════════╣
+║  [TAB]     - Intrare/Ieșire din modul player                   ║
+║  [ESC]     - Închidere program                                 ║
+║                                                                ║
+║  Modul Player:                                                 ║
+║    W/A/S/D - Mișcare (înainte/stânga/înapoi/dreapta)           ║
+║    Mouse   - Rotire cameră                                     ║
+╚════════════════════════════════════════════════════════════════╝
+```
 
----
+**Demo 3:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║                      CONTROALE JOC                             ║
+╠════════════════════════════════════════════════════════════════╣
+║  [TAB]     - Intrare/Ieșire din modul player                   ║
+║  [ENTER]   - Intrare/Ieșire din modul gravitație planetă       ║
+║  [ESC]     - Închidere program                                 ║
+║                                                                ║
+║  Modul Player:                                                 ║
+║    W/A/S/D - Mișcare (înainte/stânga/înapoi/dreapta)           ║
+║    Mouse   - Rotire cameră                                     ║
+║                                                                ║
+║  Modul Gravitație Planetă:                                     ║
+║    [SPACE] - Săritură pe planetă                               ║
+╚════════════════════════════════════════════════════════════════╝
+```
 
-### 🌍 Demo 2: Gravitație Planetară
-Simulare de gravitație pe suprafața unei planete cu physics custom.
+**Demo 4:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║                      CONTROALE JOC                             ║
+╠════════════════════════════════════════════════════════════════╣
+║  [TAB]     - Intrare/Ieșire din modul player                   ║
+║  [ESC]     - Închidere program                                 ║
+║                                                                ║
+║  Modul Player:                                                 ║
+║    W/A/S/D - Mișcare (înainte/stânga/înapoi/dreapta)           ║
+║    Mouse   - Rotire cameră                                     ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+```
 
-**Controale:**
-- `TAB` - Intrare/Ieșire din modul player
-- `ENTER` - Intrare/Ieșire din modul gravitație planetă
-- `W/A/S/D` - Mișcare
-- `SPACE` - Săritură pe planetă
-- `Mouse` - Rotire cameră
-- `ESC` - Închidere program
+**Demo 5:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║                      CONTROALE JOC                             ║
+╠════════════════════════════════════════════════════════════════╣
+║  [TAB]     - Intrare/Ieșire din modul player                   ║
+║  [ESC]     - Închidere program                                 ║
+║                                                                ║
+║  Modul Player:                                                 ║
+║    W/A/S/D     - Mișcare (înainte/stânga/înapoi/dreapta)       ║
+║    Mouse       - Rotire cameră                                 ║
+║    Click stânga - Tragere pistol                               ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+```
 
----
-
-### 🔫 Demo 3: First Person Shooter
-Prototip FPS cu animații de arme și mecanism de tragere.
-
-**Controale:**
-- `TAB` - Intrare/Ieșire din modul player
-- `W/A/S/D` - Mișcare
-- `Mouse` - Rotire cameră
-- `Click stâng` - Tragere pistol
-- `ESC` - Închidere program
-
----
-
-### 🪟 Demo 4: Custom GUI System
-Prototip de sistem de ferestre tip ImGui (Work in Progress).
-
-**Controale:**
-- `ESC` - Închidere program
-
-> **Notă:** Acesta este un experiment de creare a unui sistem de UI custom. Încă în dezvoltare!
-
----
-
-### 🎨 Demo 5: [Descriere demo 5]
-*[Adaugă aici descrierea demo-ului 5]*
-
----
-
-### ⚡ Demo 6: [Descriere demo 6]
-*[Adaugă aici descrierea demo-ului 6]*
-
+**Demo 6:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║  Asta nu e joc, e o incercare de a crea ferestre si poligoane  ║
+╠════════════════════════════════════════════════════════════════╣
+║  [ESC]     - Închidere program                                 ║
+║                                                                ║
+║  Notă: Acesta este un prototip pentru crearea de ferestre      ║
+║        stil ImGui. Work in progress!                           ║
+╚════════════════════════════════════════════════════════════════╝
+```
 ---
 
 ## 🛠️ Tehnologii utilizate
