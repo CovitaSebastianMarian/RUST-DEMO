@@ -291,9 +291,14 @@ Proiect dezvoltat de mine în vara 2025 ca explorare a programării grafice low-
 
 ---
 
-## 📄 Licență
+## 📜 Licență
 
-[Specifică licența aici - ex: MIT, GPL, etc.]
+Acest proiect este protejat prin **Non-Commercial License**. 
+Vezi fișierul [LICENSE](LICENSE) pentru termenii completi.
+
+**Utilizare comercială interzisă** fără permisiunea scrisă a autorului.
+
+© 2025 [Coviță Sebastian Marian]
 
 ---
 
