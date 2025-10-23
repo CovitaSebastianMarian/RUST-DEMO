@@ -3,7 +3,7 @@
 [![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=for-the-badge&logo=opengl)](https://www.opengl.org/)
 
-> 🌟 **Demo de vară 2024** - Explorare grafică 3D în Rust la nivel low-level
+> 🌟 **Demo de vară 2025** - Explorare grafică 3D în Rust la nivel low-level
 
 Acest proiect reprezintă o colecție de demonstrații grafice 3D dezvoltate vara aceasta în Rust, folosind **OpenGL** și **GLFW** la nivel low-level (fără engine-uri high-level). Proiectul explorează concepte fundamentale de grafică computerizată, de la shadow mapping până la sisteme de particule și interfețe custom.
 
@@ -16,8 +16,6 @@ Acest proiect reprezintă o colecție de demonstrații grafice 3D dezvoltate var
 - ✅ **Rust** (ultima versiune stabilă) - [Instalare Rust](https://rustup.rs/)
 - ✅ **CMake** - Necesar pentru build-ul dependențelor native
   - **Windows**: [Descarcă CMake](https://cmake.org/download/)
-  - **Linux**: `sudo apt install cmake` (Debian/Ubuntu) sau `sudo dnf install cmake` (Fedora)
-  - **macOS**: `brew install cmake`
 
 ---
 
