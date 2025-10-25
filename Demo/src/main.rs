@@ -1,7 +1,9 @@
+#![allow(unused)]
 mod seb;
 
 use crate::seb::gui::gui::Clip;
 use crate::seb::gui::panel::{self, Panel, PanelRenderer};
+use crate::seb::gui::text;
 use crate::seb::gui::window::{GuiBuilder, GuiRenderer};
 use crate::seb::planet::Planet;
 use crate::seb::player::Player;
@@ -10,7 +12,7 @@ use crate::seb::primitives::{
     VectorRenderer,
 };
 use crate::seb::skybox::Skybox;
-use gl::BLEND;
+use gl::{BLEND, NONE};
 use nalgebra_glm as glm;
 use seb::collision::{Collider, collide};
 use seb::gui::text::{TextBoxD, TextBoxRenderer, TextFont};
@@ -618,6 +620,17 @@ fn demo6() {
 
         b.push_panel(p1);
 
+        let mut p2 = Panel::new();
+        p2.color = glm::vec4(1.0, 1.0, 0.9, 1.0);
+        p2.position = glm::vec2(30.0, 30.0);
+        p2.size = glm::vec2(40.0, 30.0);
+        p2.draw_as_circle = true;
+        p2.border_thickness = 1f32;
+        p2.z_index = 0.1;
+        p2.border_color = glm::vec4(0.0, 1.0, 1.0, 1.0);
+
+        b.push_panel(p2);
+
         let mut win = Panel::new();
         win.position = glm::vec2(50.0, 60.0);
         win.size = glm::vec2(100.0, 80.0);
@@ -653,6 +666,103 @@ fn demo6() {
     }
 }
 
+#[cfg(feature = "demo7")]
+fn demo7() {
+    println!("╔════════════════════════════════════════════════════════════════╗");
+    println!("║                          TEXT BOXURI                           ║");
+    println!("╠════════════════════════════════════════════════════════════════╣");
+    println!("║  [ESC]     - Închidere program                                 ║");
+    println!("║                                                                ║");
+    println!("╚════════════════════════════════════════════════════════════════╝");
+    let mut window = Window::new();
+    window.create(1000, 800, "Window");
+
+    
+
+    let mut font1 = TextFont::new("./assets/ManufacturingConsent-Regular.ttf", 50f32);
+    font1.init_chars_texture(false);
+    let mut text1 = TextBoxD::new();
+    text1.text = "Buna ziua!".to_string();
+    text1.color = glm::vec4(1.0, 1.0, 0.0, 1.0);
+    text1.position = glm::vec2(0.0, 0.0);
+    text1.clip = None;
+    text1.z_index = 0.1;
+
+
+    let mut font2 = TextFont::new("./assets/Roboto-VariableFont_wdth,wght.ttf", 50f32);
+    font2.init_chars_texture(false);
+    let mut text2 = TextBoxD::new();
+    text2.text = "Salutare!".to_string();
+    text2.color = glm::vec4(0.0, 0.5, 1.0, 1.0);
+    text2.position = glm::vec2(0.0, 50.0);
+    text2.clip = None;
+    text2.z_index = 0.1;
+
+    let mut font3 = TextFont::new("./assets/Roboto_Condensed-Black.ttf", 50f32);
+    font3.init_chars_texture(false);
+    let mut text3 = TextBoxD::new();
+    text3.text = "Blah blah blah!".to_string();
+    text3.color = glm::vec4(1.0, 0.0, 0.0, 1.0);
+    text3.position = glm::vec2(0.0, 100.0);
+    text3.clip = None;
+    text3.z_index = 0.1;
+
+
+    let mut panel1 = Panel::new();
+    panel1.position = glm::vec2(0.0, 150.0);
+    panel1.size = glm::vec2(500.0, 50.0);
+    panel1.color = glm::vec4(0.0, 0.5, 0.0, 1.0);
+    panel1.border_thickness = 1.0;
+    panel1.border_color = glm::vec4(0.0, 0.0, 0.5, 1.0);
+    panel1.z_index = -0.1;
+    panel1.draw_as_circle = false;
+    panel1.clip = None;
+
+    let mut text4 = TextBoxD::new();
+    text4.text = "Puteti scrie ceva aici!".to_string();
+    text4.color = glm::vec4(1.0, 1.0, 1.0, 1.0);
+    text4.position = glm::vec2(0.0, 150.0);
+    text4.clip = Some(Clip::from(panel1.position + glm::vec2(1.0, 0.0), panel1.size - glm::vec2(2.0, 0.0)));
+    text4.z_index = 0.1;
+
+
+    let mut pr = PanelRenderer::new();
+    let mut tr = TextBoxRenderer::new();
+
+
+    while window.is_open() {
+        window.set_color(0.0, 0.0, 0.0, 1.0);
+        window.poll_events();
+        if window.get_key(glfw::Key::Escape).unwrap() == glfw::Action::Press {
+            window.close();
+        }
+        tr.set_size(window.width, window.height);
+        pr.set_size(window.width, window.height);
+        
+
+        for c in &window.keyboard.char_keys {
+            text4.text.push(*c);
+        }
+        if let Some(key) = window.keyboard.find_key(glfw::Key::Backspace) && (key.action == glfw::Action::Press || key.action == glfw::Action::Repeat) {
+            text4.text.pop();
+        }
+
+
+        pr.draw(&mut [panel1.clone()]);
+        tr.draw(&font1, &mut [text1.clone()]);
+        tr.draw(&font2, &mut [text2.clone(), text4.clone()]);
+        tr.draw(&font3, &mut [text3.clone()]);
+
+
+
+
+
+
+
+        window.swap_buffers();
+    }
+}
+
 fn main() {
     #[cfg(feature = "demo1")]
     demo1();
@@ -671,4 +781,7 @@ fn main() {
 
     #[cfg(feature = "demo6")]
     demo6();
+
+    #[cfg(feature = "demo7")]
+    demo7();
 }
