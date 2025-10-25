@@ -42,6 +42,9 @@ cargo run --features demo5
 
 # Demo 6
 cargo run --features demo6
+
+# Demo 7
+cargo run --features demo7
 ```
 
 ---
@@ -135,6 +138,16 @@ cargo run --features demo6
 ║                                                                ║
 ║  Notă: Acesta este un prototip pentru crearea de ferestre      ║
 ║        stil ImGui. Work in progress!                           ║
+╚════════════════════════════════════════════════════════════════╝
+```
+
+**Demo 7:**
+```
+╔════════════════════════════════════════════════════════════════╗
+║                          TEXT BOXURI                           ║
+╠════════════════════════════════════════════════════════════════╣
+║  [ESC]     - Închidere program                                 ║
+║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
 ---
