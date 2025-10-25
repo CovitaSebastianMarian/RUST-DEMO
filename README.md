@@ -21,7 +21,7 @@ Acest proiect reprezintă o colecție de demonstrații grafice 3D dezvoltate var
 
 ## 🚀 Cum se rulează
 
-Proiectul conține **6 demonstrații diferite**, fiecare ilustrând aspecte diferite ale programării grafice.
+Proiectul conține **7 demonstrații diferite**, fiecare ilustrând aspecte diferite ale programării grafice.
 
 ### Rulare demo-uri:
 ```bash
