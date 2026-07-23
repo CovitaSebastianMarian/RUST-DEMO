@@ -66,6 +66,10 @@ cargo run --features demo7
 ╚════════════════════════════════════════════════════════════════╝
 ```
 
+
+https://github.com/user-attachments/assets/026e5384-234d-46fb-84af-1ad299439d13
+
+
 **Demo 2:**
 ```
 ╔════════════════════════════════════════════════════════════════╗
@@ -79,6 +83,7 @@ cargo run --features demo7
 ║    Mouse   - Rotire cameră                                     ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
+<img width="786" height="865" alt="demo2" src="https://github.com/user-attachments/assets/2a2fb8ff-c0f2-40d5-9be2-921e28c6d3dc" />
 
 **Demo 3:**
 ```
@@ -98,6 +103,10 @@ cargo run --features demo7
 ╚════════════════════════════════════════════════════════════════╝
 ```
 
+
+https://github.com/user-attachments/assets/de90ccb6-36f3-45d2-817b-03ad00ce65b9
+
+
 **Demo 4:**
 ```
 ╔════════════════════════════════════════════════════════════════╗
@@ -112,6 +121,12 @@ cargo run --features demo7
 ║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
+
+
+
+https://github.com/user-attachments/assets/7f98ab15-473d-4a4f-8604-047d8f5ae93c
+
+
 
 **Demo 5:**
 ```
@@ -128,6 +143,10 @@ cargo run --features demo7
 ║                                                                ║
 ╚════════════════════════════════════════════════════════════════╝
 ```
+
+
+https://github.com/user-attachments/assets/23e34c91-2015-4e0d-81a8-eb61133114d3
+
 
 **Demo 6:**
 ```
